@@ -1,0 +1,309 @@
+  <!DOCTYPE html>
+     <html>
+     <title>Mi nuevo Blog</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+     <style>
+     body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+     </style>
+     <body class="w3-light-blue">
+
+     <!-- w3-content defines a container for fixed size centered content,
+     and is wrapped around the whole page content, except for the footer in this example -->
+     <div class="w3-content" style="max-width:1400px">
+
+     <!-- Header -->
+     <header class="w3-container w3-center w3-padding-32">
+       <h1><b>MI BLOG</b></h1>
+       <p>Bienvenido al blog de <span class="w3-tag">Carlos</span></p>
+     </header>
+     <!-- barra -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <body>
+
+       <div class="w3-container">
+
+        </div>
+
+       <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openCity('Ica')">Ica</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Cuzco')">Cuzco</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Piura')">Piura</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Chincha')">Chincha</button>
+       </div>
+
+       <div id="Ica" class="w3-container w3-display-container city" style="display:none">
+         <span onclick="this.parentElement.style.display='none'"
+         class="w3-button w3-large w3-display-topright">&times;</span>
+         <h2>Ica</h2>
+         <p>Ica</p>
+       </div>
+
+       <div id="Cuzco" class="w3-container w3-display-container city" style="display:none">
+          <span onclick="this.parentElement.style.display='none'"
+            class="w3-button w3-large w3-display-topright">&times;</span>
+          <h2>Cuzco</h2>
+          <p>Cuzco</p>
+       </div>
+
+       <div id="Piura" class="w3-container w3-display-container city" style="display:none">
+         <span onclick="this.parentElement.style.display='none'"
+           class="w3-button w3-large w3-display-topright">&times;</span>
+         <h2>Piura</h2>
+         <p>Piura</p>
+       </div>
+
+       <div id="Chincha" class="w3-container w3-display-container city" style="display:none">
+          <span onclick="this.parentElement.style.display='none'"
+            class="w3-button w3-large w3-display-topright">&times;</span>
+          <h2>Chincha</h2>
+          <p>Chincha</p>
+       </div>
+
+     <script>
+       function openCity(cityName) {
+       var i;
+       var x = document.getElementsByClassName("city");
+       for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+     }
+       document.getElementById(cityName).style.display = "block";
+     }
+     </script>
+     <!-- barra end -->
+
+     <!-- Grid -->
+     <div class="w3-row">
+
+     <!-- Blog entries -->
+     <div class="w3-col l8 s12">
+       <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="imagenes/machu-pichu.jpg" alt="Nature" style="width:100%">
+           <div class="w3-container">
+             <h3><b>7 LUGARES ASOMBROSOS EN PERU</b></h3>
+             <h5>Que lugares visitar, <span class="w3-opacity">Junio 5, 2020</span></h5>
+           </div>
+
+         <div class="w3-container">
+           <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+             tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+           <div class="w3-row">
+             <div class="w3-col m8 s12">
+               <a href="Machupichu.html"target="_blank"><p><button class="w3-button w3-left w3-white w3-border"><b>READ MORE »</b></button></p></a>
+             </div>
+             <div class="w3-col m4 w3-hide-small">
+               <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+             </div>
+           </div>
+         </div>
+         <br>
+       </div>
+       <hr>
+       <!-- Blog entry -->
+       <div class="w3-card-4 w3-margin w3-white">
+       <img src="imagenes/lago.jpg" alt="Norway" style="width:100%">
+         <div class="w3-container">
+           <h3><b>NATURALEZA</b></h3>
+           <h5>Amazonia, <span class="w3-opacity">Junio 6, 2020</span></h5>
+         </div>
+
+         <div class="w3-container">
+           <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+             tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+           <div class="w3-row">
+             <div class="w3-col m8 s12">
+               <a href="naturaleza.html"target="_blank"><p><button class="w3-button w3-left w3-white w3-border"><b>READ MORE »</b></button></p></a>
+             </div>
+             <div class="w3-col m4 w3-hide-small">
+               <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+             </div>
+           </div>
+         </div>
+         <br>
+       </div>
+     <!-- END BLOG ENTRIES -->
+     <!-- Blog entry -->
+     <div class="w3-card-4 w3-margin w3-white">
+     <img src="imagenes/space.jpg" alt="Norway" style="width:100%">
+       <div class="w3-container">
+         <h3><b>CIENCIA</b></h3>
+         <h5>Descubre el universo, <span class="w3-opacity">Junio 6, 2020</span></h5>
+       </div>
+
+       <div class="w3-container">
+         <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+           tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+         <div class="w3-row">
+           <div class="w3-col m8 s12">
+             <a href="Ciencia.html" target="_blank>"><p><button class="w3-button w3-left w3-white w3-border"><b>READ MORE »</b></button></p></a>
+           </div>
+           <div class="w3-col m4 w3-hide-small">
+             <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+           </div>
+         </div>
+       </div>
+       <br>
+     </div>
+   <!-- END BLOG ENTRIES -->
+     </div>
+
+     <!-- Introduction menu -->
+     <div class="w3-col l4">
+       <!-- About Card -->
+       <div class="w3-card w3-margin w3-margin-top">
+       <img src="imagenes/YO.jpg"  alt="Carlos" style= "width:100%" class="w3-hover-sepia">
+         <div class="w3-container w3-white">
+           <h4><b>Carlos Violeta</b></h4>
+           <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+         </div>
+       </div><hr>
+
+       <!-- Posts -->
+       <div class="w3-card w3-margin">
+         <div class="w3-container w3-padding">
+           <h4>Popular Posts</h4>
+         </div>
+         <ul class="w3-ul w3-hoverable w3-white">
+           <li class="w3-padding-16">
+             <a href="Machupichu.html"target="_blank">
+             <img src="imagenes/machu-pichu.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+             <span class="w3-large">7 LUGARES ASOMBROSOS EN PERU</span><br>
+             <span>Que lugares visitar</span></a>
+           </li>
+           <li class="w3-padding-16">
+             <a href="naturaleza.html"target="_blank">
+             <img src="imagenes/lago.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+             <span class="w3-large">Naturaleza</span><br>
+             <span>Praes tinci sed</span></a>
+           </li>
+           <li class="w3-padding-16">
+             <img src="imagenes/space.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+             <span class="w3-large">Ciencia</span><br>
+             <span>Ultricies congue</span>
+           </li>
+         </ul>
+       </div>
+       <hr>
+
+       <!-- Labels / tags -->
+       <div class="w3-card w3-margin">
+         <div class="w3-container w3-padding">
+           <h4>Tags</h4>
+         </div>
+         <div class="w3-container w3-white">
+         <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+           <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+           <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+           <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+           <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+         </p>
+         </div>
+       </div>
+
+     <!-- END Introduction Menu -->
+     </div>
+
+     <!-- END GRID -->
+     </div><br>
+
+     <!-- END w3-content -->
+     </div>
+     <!-- gallery -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <body>
+
+         <div class="w3-container">
+          <center><h2>Tabbed Image Gallery</h2></center>
+          <p>Click en la imagen para ver mejor :3</p>
+         </div>
+
+      <div class="w3-row-padding">
+         <div class="w3-col s3 w3-container">
+           <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+            <img src="imagenes/album/1.jpg" alt="Nature" style="width:300px;height:300px;">
+           </a>
+         </div>
+           <div class="w3-col s3 w3-container">
+             <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+             <img src="imagenes/album/2.jpg" alt="Snow" style="width:300px;height:300px;">
+             </a>
+         </div>
+           <div class="w3-col s3 w3-container">
+             <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+             <img src="imagenes/album/3.jpg" alt="Mountains" style="width:300px;height:300px;">
+           </a>
+         </div>
+           <div class="w3-col s3 w3-container">
+             <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+             <img src="imagenes/album/4.jpg" alt="Lights" style="width:300px;height:300px;">
+             </a>
+           </div>
+      </div>
+        <br>
+
+          <div id="Nature" class="picture w3-display-container w3-center" style="display:none">
+             <img src="imagenes/album/1.jpg" alt="Nature" style="width:100%">
+             <span onclick="this.parentElement.style.display='none'"
+              class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+             <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Nature</div>
+          </div>
+
+          <div id="Snow" class="picture w3-display-container w3-center" style="display:none">
+            <img src="imagenes/album/2.jpg" alt="Snow" style="width:100%">
+            <span onclick="this.parentElement.style.display='none'"
+             class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+            <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Snow</div>
+         </div>
+
+         <div id="Mountains" class="picture w3-display-container w3-center" style="display:none">
+            <img src="imagenes/album/3.jpg" alt="Mountains" style="width:100%">
+            <span onclick="this.parentElement.style.display='none'"
+             class="w3-display-topright w3-button w3-transparent">&times;</span>
+            <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
+          </div>
+
+         <div id="Lights" class="picture w3-display-container w3-center" style="display:none">
+             <img src="imagenes/album/4.jpg" alt="Lights" style="width:100%">
+             <span onclick="this.parentElement.style.display='none'"
+              class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+             <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Northern Lights</div>
+         </div>
+
+      <script>
+           function openImg(imgName) {
+           var i, x;
+           x = document.getElementsByClassName("picture");
+           for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+          }
+           document.getElementById(imgName).style.display = "block";
+         }
+      </script>
+     <!-- gallery end -->
+     <!-- porcentajes -->
+       <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+       <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+       <div class="w3-light-grey">
+          <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+       </div>
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+       <div class="w3-light-grey">
+         <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+       </div>
+       <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+        <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+
+     <!-- Footer -->
+     <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+       <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+       <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+     </footer>
+  </body>
+</html>
